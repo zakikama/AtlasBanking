@@ -16,7 +16,7 @@ import {
 } from "react-pro-sidebar";
 import "../Assets/Styles/custom.scss";
 import Footer from "../Footer/index";
-import { Link } from "react-router-dom";
+import {  BrowserRouter as Router, Switch, Route, Link  } from "react-router-dom";
 const SideNavigation = () => {
   const [collapsed, setCollapsed] = useState(false);
   // added styles 
@@ -33,6 +33,8 @@ const SideNavigation = () => {
     setCollapsed(!collapsed);
   };
   return (
+    
+    <div>
     <ProSidebar style={styles.sideBarHeight} collapsed={collapsed}>
       <SidebarHeader>
         
@@ -42,16 +44,18 @@ const SideNavigation = () => {
         </div>
       </SidebarHeader>
       <Menu iconShape="square">
-        <MenuItem icon={<DashboardOutlinedIcon/>}> Dashboard</MenuItem>
-        <MenuItem icon={<AccountBalanceOutlinedIcon />}>Accounts</MenuItem>
-        <MenuItem icon={<MonetizationOnOutlinedIcon />}>Transactions</MenuItem>
-        <MenuItem icon={<SendOutlinedIcon />}>Transfer</MenuItem>
-        <MenuItem icon={<SupervisorAccountOutlinedIcon />}>Administration</MenuItem>
-        <MenuItem icon={<HelpOutlineOutlinedIcon />}>Help</MenuItem>
-        <MenuItem icon={<InfoOutlinedIcon />}>About Us</MenuItem>
+        <MenuItem icon={<DashboardOutlinedIcon/>}> Dashboard
+        <Link to="/dashboard" /></MenuItem>
+        <MenuItem icon={<AccountBalanceOutlinedIcon />}>Accounts<Link to="/Accounts" /></MenuItem>
+        <MenuItem icon={<MonetizationOnOutlinedIcon />}>Transactions<Link to="/Transactions" /></MenuItem>
+        <MenuItem icon={<SendOutlinedIcon />}>Transfer<Link to="/Transfer" /></MenuItem>
+        <MenuItem icon={<SupervisorAccountOutlinedIcon />}>Administration<Link to="/Admin" /></MenuItem>
+        <MenuItem icon={<InfoOutlinedIcon />}>About Us<Link to="/about" /></MenuItem>
       </Menu>
       <Footer/> 
     </ProSidebar>
+    </div>
+    
   );
 };
 export default SideNavigation;

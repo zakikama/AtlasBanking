@@ -12,13 +12,10 @@ const Header = () => {
   return (
     <div>
       <Navbar color="black" light expand="md">
-        <NavbarBrand href="/">React Application</NavbarBrand>
+        <NavbarBrand href="/">Atlas Banking</NavbarBrand>
         <Nav className="mr-auto" navbar>
           <NavItem>
-            <NavLink href="/components/">Components</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="">GitHub</NavLink>
+            <NavLink href="https://github.com/zakikama/AtlasBanking">GitHub</NavLink>
           </NavItem>
         </Nav>
         <NavbarText>

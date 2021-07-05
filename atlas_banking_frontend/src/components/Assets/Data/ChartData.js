@@ -1,4 +1,5 @@
-export  const data = [
+
+   export  const data = [
     {
       X: 'Jan',
       Y: 4000,

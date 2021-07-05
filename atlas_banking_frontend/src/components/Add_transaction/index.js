@@ -45,6 +45,7 @@ function Transactions() {
   }
 
   return (
+      
     <Form onSubmit={submitAccount}>
      
       <Form.Group controlId="solde">
@@ -59,7 +60,7 @@ function Transactions() {
       </Form.Group>
       <input type="number" placeholder="Entrez le montant de transfert" id="in"/>
       <Button type="submit" variant="primary">
-        Ajouter
+        Transfer
       </Button>
     </Form>
   );
