@@ -18,9 +18,7 @@ const Header = () => {
             <NavLink href="/components/">Components</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="">
-              GitHub
-            </NavLink>
+            <NavLink href="">GitHub</NavLink>
           </NavItem>
         </Nav>
         <NavbarText>
